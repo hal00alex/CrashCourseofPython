@@ -1,0 +1,58 @@
+#always start with this
+def main():
+    #example of if statement
+    #vary n to see changes
+    n = 10
+    if (n != 10):
+        print("n is not equal to 10")
+    else:
+        print ("n is equal to 10")
+
+    #comparsion operators: < <= >= > != ==
+
+    #example of for loop
+    #vary number in parathnese to see changes
+    for i in range (5):
+        print(i,"\n")
+
+    #example of a while loop
+    j = 5
+    while (j > 0):
+        print (j, "\n")
+        j = j - 1 
+    #yes, the while loop acts like a for loop in this case
+
+    #Note: python lists are denoted by []
+    #Note: lists are like FIFO for the 306 students reading this
+    #Note: python has built in function that returns the lenght of strings and list (len())
+
+    #Bubble Sort Alogrithm Example Code
+
+    y = [5,2,3,1]
+    print (y,"\n") 
+
+    #flag to tell me that I am done
+    done = False  
+    #count for the loops 
+    count = len(y)
+    #temp varaibles for swapping 
+    temp1 = 0
+    temp2 = 0
+
+    #while not sorted, keep sorting
+    while (done == False):
+        #assumed innocence before guilt 
+        done = True 
+        for i in range(count-1):
+            if y[i] > y[i+1]:
+                #if it got here, then it wasn't true 
+                done = False
+                #swap two adjent elements 
+                y[i],y[i+1] = y[i+1],y[i]
+    print (y,"\n")
+    
+            
+main() 
+
+    
+    
